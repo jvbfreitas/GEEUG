@@ -71,10 +71,9 @@ aux = geeUG(y~TRIM+LOCAL,~TRIM+LOCALL,dados,as.numeric(factor(dados$id)),
             corstr = "unstructured",
             tol = 0.00001^2,maxiter = 300,linkphi = "log",
             linkmu = "cloglog")
-aux
-summary(aux)
-plot(aux)
-dadaux = data.frame(aux$resq)
+aux$residuals # quantile residuals
+plot.geeUG(aux)
+dadaux = data.frame(resq = aux$residuals)
 library(car)
 library(qqplotr)
 ggplot(dadaux,aes(sample = resq)) +
