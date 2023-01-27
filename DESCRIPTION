@@ -1,0 +1,24 @@
+Package: geeUG
+Type: Package
+Title: Unit Gamma Generalized Estimating Equations
+Version: 0.1.0
+Authors@R: person("João", "Freitas", email = "jvbfreitas@ime.unicamp.br", role = c("aut", "cre"))
+Description: This package includes the estimation of mean and precision models parameters, 
+    a residual analysis and local influences diagnostic tools
+Depends:
+  pracma,
+  Matrix,
+  mcglm,
+  lattice,
+  latticeExtra,
+  grid,
+  maxLik,
+  ggplot2,
+  betareg,
+  gamlss,
+  tidyverse,
+  simplexreg,
+  resample,
+  aod
+License: GPL-3
+LazyData: true
