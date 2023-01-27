@@ -387,7 +387,7 @@ geeUG = function(formula.mu, formula.phi, data, id, tol = 0.001,
   # # Modelo sob suposição de dependência
   cont = 1
   contmax = 0
-  Q = bdiag(X,Z)
+  Q = as.matrix(bdiag(X,Z))
   repeat{
     if(silence == FALSE){
       print(cont)
